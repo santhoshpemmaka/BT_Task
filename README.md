@@ -1,5 +1,12 @@
 ## BT_Task
 
+# Github repository link mentioned below:-
+
+ * https://github.com/santhoshpemmaka/BT_Task
+
+# Frontend UI deployed in the Netlify link mentioned below:-
+
+ * https://silver-tiramisu-d2b9a9.netlify.app/
 
 # Front End Key Features:
 
