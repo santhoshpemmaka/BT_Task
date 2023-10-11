@@ -1,12 +1,12 @@
 ## BT_Task
 
-# Github repository link mentioned below:-
-
- * https://github.com/santhoshpemmaka/BT_Task
-
 # Frontend UI deployed in the Netlify link mentioned below:-
 
  * https://silver-tiramisu-d2b9a9.netlify.app/
+
+# Backend server logic deployed in the render website link mentioned below:-
+
+ * https://bt-task-uajs.onrender.com/
 
 # Front End Key Features:
 
@@ -14,7 +14,7 @@
   * When logging in as a Guest, the page redirects to the feedback page, where all fields are provided. After filling in the details, the user can click on the submit button.
   * A confirmation message is displayed to indicate that the data has been successfully stored on the server.
   * When logging in as an Admin, the user is given the option to enter test credentials after clicking on the login button.
-  * Successful log in redirects the user to the admin dashboard page.
+  * Successful login redirects the user to the admin dashboard page.
   * Clicking on the "BT Group" text on different pages redirects the user to the home page.
   * Tech Stack:
     ReactJS, JavaScript, Rest API, SCSS.
