@@ -12,6 +12,13 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// To reduce preflight deplay add logic
+app.use(
+  cors({
+    maxAge: 86400, // Cache preflight requests for 1 day
+  })
+);
+
 // Routes
 app.use("/", feedbackRoutes);
 app.use("/", userRoutes);
