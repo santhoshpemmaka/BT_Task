@@ -1,10 +1,10 @@
 # BT_Task
 
-### Frontend UI deployed in the render website link mentioned below:-
+### Frontend UI deployed in the Netlify website link mentioned below:-
 
- * https://bt-task-ui-gdyx.onrender.com/
+ * https://silver-tiramisu-d2b9a9.netlify.app/
 
-### Backend server logic deployed in the render website link mentioned below:-
+### Backend server logic deployed in the Render website link mentioned below:-
 
  * https://bt-task-uajs.onrender.com/
 
