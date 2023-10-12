@@ -12,6 +12,15 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// To reduce preflight request.
+const corsOptions = {
+  origin: "https://silver-tiramisu-d2b9a9.netlify.app/", // Allow requests from this origin
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true, // Enable cookies and authentication headers
+};
+
+app.use(cors(corsOptions));
+
 // Routes
 app.use("/", feedbackRoutes);
 app.use("/", userRoutes);
