@@ -18,18 +18,21 @@ app.use(
     maxAge: 86400, // Cache preflight requests for 1 day
   })
 );
-
-// Routes
-app.use("/", feedbackRoutes);
-app.use("/", userRoutes);
-
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "*");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  res.setHeader("Access-Control-Max-Age", "86400");
+
+  // Set caching headers for preflight response
+  if (req.method === "OPTIONS") {
+    res.header("Access-Control-Max-Age", "86400"); // Cache preflight response for 1 hour (in seconds)
+  }
   req.next();
 });
+
+// Routes
+app.use("/", feedbackRoutes);
+app.use("/", userRoutes);
 
 mongoose.set("strictQuery", false); // overcome deploy error
 mongoose
