@@ -2,11 +2,11 @@
 
 ### Frontend UI deployed in the Netlify website link mentioned below:-
 
- * https://silver-tiramisu-d2b9a9.netlify.app/
+ * <a href="https://silver-tiramisu-d2b9a9.netlify.app/" target="_blank">BT Task Assignment</a>
 
 ### Backend server logic deployed in the Render website link mentioned below:-
 
- * https://bt-task-uajs.onrender.com/
+ * <a href="https://bt-task-uajs.onrender.com/" target="_blank">BT Task Server Endpoint</a>
 
 # Front End Key Features:
 
