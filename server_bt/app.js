@@ -12,12 +12,17 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// Routes
+app.use("/", feedbackRoutes);
+app.use("/", userRoutes);
+
 // To reduce preflight deplay add logic
-app.use(
-  cors({
-    maxAge: 86400, // Cache preflight requests for 1 day
-  })
-);
+
+const corsOptions = {
+  optionsSuccessStatus: 204,
+};
+app.options("*", cors(corsOptions)); // Enable preflight requests for all routes
+app.use(cors(corsOptions)); // Enable CORS for all routes
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "*");
@@ -29,10 +34,6 @@ app.use((req, res, next) => {
   }
   req.next();
 });
-
-// Routes
-app.use("/", feedbackRoutes);
-app.use("/", userRoutes);
 
 mongoose.set("strictQuery", false); // overcome deploy error
 mongoose
