@@ -10,6 +10,8 @@
 
 # Front End Key Features:
 
+  * `The website is mobile responsive also. We can open mobile devices also, Using media query to implement mobile responsiveness.`
+  
   * On the home page, there are options to log in as a Guest or an Admin.
   * When logging in as a Guest, the page redirects to the feedback page, where all fields are provided. After filling in the details, the user can click on the submit button.
   * A confirmation message is displayed to indicate that the data has been successfully stored on the server.
@@ -18,6 +20,7 @@
   * Clicking on the "BT Group" text on different pages redirects the user to the home page.
   * Tech Stack:
     ReactJS, JavaScript, Rest API, SCSS.
+  
     
 # Back End Key Features:
 
