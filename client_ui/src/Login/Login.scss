@@ -1,76 +1,106 @@
-.login-container{
-    min-height: 90vh;
-    width: 90%;
-    overflow-y: scroll;
-    position: relative;
-    .login-title{
-        font-size: 1.5rem;
-        margin-top: 1rem;
-        text-align: center;
+.login-container {
+  min-height: 90vh;
+  width: 90%;
+  overflow-y: scroll;
+  position: relative;
+  .login-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #333;
+    letter-spacing: 0.02rem;
+  }
+  .login-component {
+    width: 60%;
+    margin: 0.5rem auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .login-field {
+      padding: 1rem 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        width: 15%;
+        display: inline-block;
         color: #333;
-        letter-spacing: 0.02rem;
-    }
-    .login-component{
+        font-weight: 600;
+      }
+      input {
+        display: inline-block;
         width: 60%;
-        margin: 0.5rem auto;
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        .login-field{
-            padding: 1rem 0.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            span{
-                width: 15%;
-                display: inline-block;
-                color: #333;
-                font-weight: 600;
-            }
-            input{
-                display: inline-block;
-                width: 60%;
-                padding: 0.5rem 0.5rem;
-                border-radius: 5px;
-                border: 1px solid rgb(223, 211, 211);
-                outline: none;
-            }
-        }
-        .error-message{
-            width: 70%;
-            margin: 0 auto;
-            color: rgb(223, 23, 23);
-            margin-top: 1rem;
-        }
-        .login-button{
-            width: 30%;
-            margin: 1rem auto;
-            padding: 0.5rem;
-            background: #5513b4;
-            font-size: 1.15rem;
-            color: #fff;
-            border: none;
-            border-radius: 0.5rem;
-            margin-top: 2rem;
-            cursor: pointer;
-        }
-        .login-button-test{
-            width: 30%;
-            margin: 1rem auto;
-            padding: 0.5rem;
-            background: rgb(210, 67, 67);
-            font-size: 1.15rem;
-            color: #fff;
-            border: none;
-            border-radius: 0.5rem;
-            cursor: pointer;
-        }
+        padding: 0.5rem 0.5rem;
+        border-radius: 5px;
+        border: 1px solid rgb(223, 211, 211);
+        outline: none;
+      }
     }
-    .loader-dots {
-		position: absolute;
-		top: 20%;
-		left: 40%;
-		transform: translate(50%, 50%);
-	}
+    .error-message {
+      width: 70%;
+      margin: 0 auto;
+      color: rgb(223, 23, 23);
+      margin-top: 1rem;
+    }
+    .login-button {
+      width: 30%;
+      margin: 1rem auto;
+      padding: 0.5rem;
+      background: #5513b4;
+      font-size: 1.15rem;
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      margin-top: 2rem;
+      cursor: pointer;
+    }
+    .login-button-test {
+      width: 30%;
+      margin: 1rem auto;
+      padding: 0.5rem;
+      background: rgb(210, 67, 67);
+      font-size: 1.15rem;
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+  }
+  .loader-dots {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(50%, 50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    min-height: 80vh;
+    width: 100%;
+    .login-title {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+    }
+    .login-component {
+      width: 90%;
+      .login-field {
+        span {
+          width: 30%;
+        }
+        input {
+          width: 70%;
+        }
+      }
+      .login-button {
+        width: 50%;
+        font-size: 1rem;
+      }
+      .login-button-test {
+        width: 70%;
+        font-size: 1rem;
+      }
+    }
+  }
 }
